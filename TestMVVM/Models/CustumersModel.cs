@@ -11,6 +11,7 @@ namespace TestMVVM.Models
     public class CustumersModel
     {
         public List<Customer> Costumers { get; set; }
+        public string StoreName { get; set; }   
 
         public CustumersModel()
         {

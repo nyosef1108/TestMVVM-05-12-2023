@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="272,124,272,124"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Add Customer" HorizontalAlignment="Center" Margin="0,340,0,0" VerticalAlignment="Top" Height="65" Width="144" Click="Button_Click"/>
+
     </Grid>
 </Window>
