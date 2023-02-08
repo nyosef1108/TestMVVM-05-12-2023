@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Custumers.BL.BE;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,7 @@ namespace TestMVVM.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public CustumersModel CurrentModel { get; set; } 
+        public ObservableCollection<Customer> Customers { get; set; }
         public string StoreName
         {
             get {   return CurrentModel.StoreName; }
@@ -26,7 +29,8 @@ namespace TestMVVM.ViewModels
 
         public CustomersVM()
         { 
-            CurrentModel = new CustumersModel();    
+            CurrentModel = new CustumersModel(); 
+            Customers = new ObservableCollection<Customer>(CurrentModel.Costumers);
         }
     }
 }
