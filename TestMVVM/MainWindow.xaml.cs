@@ -34,5 +34,10 @@ namespace TestMVVM
         {
 
         }
+
+        private void TheName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

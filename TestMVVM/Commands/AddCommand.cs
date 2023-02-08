@@ -24,7 +24,11 @@ namespace TestMVVM.Commands
         public void Execute(object parameter)
         {
             if (ShouldAdd != null)
-                ShouldAdd(parameter.ToString(), "Tlv");
+            {
+                var values = (object[])parameter;
+                ShouldAdd(values[0].ToString(), values[1].ToString());
+            }
+
         }
 
     }
