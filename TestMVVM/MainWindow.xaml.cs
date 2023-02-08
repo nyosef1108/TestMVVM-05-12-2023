@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestMVVM.ViewModels;
 
 namespace TestMVVM
 {
@@ -20,9 +21,13 @@ namespace TestMVVM
     /// </summary>
     public partial class MainWindow : Window
     {
+        public CustomersVM CurrentVM { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            CurrentVM= new CustomersVM();
+            this.DataContext = CurrentVM;
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

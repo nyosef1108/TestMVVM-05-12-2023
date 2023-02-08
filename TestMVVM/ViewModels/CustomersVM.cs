@@ -14,14 +14,13 @@ namespace TestMVVM.ViewModels
         public CustumersModel CurrentModel { get; set; } 
         public string StoreName
         {
-            get { return CurrentModel.StoreName; }
+            get {   return CurrentModel.StoreName; }
             set
             { 
                 CurrentModel.StoreName = value;
                 if (PropertyChanged!= null)
-                {
                     PropertyChanged(this, new PropertyChangedEventArgs("StoreName"));
-                }
+                
             } 
         }
     }
