@@ -24,9 +24,8 @@ namespace TestMVVM.Models
             StoreName = "Rami Levi"; 
         }
 
-         public void AddCustomer(string Name, string Address)
+        public void AddCustomer(Customer c)
         {
-            var c  = new Customer { Name = Name, Address = Address };
             Costumers.Add(c);
         }
     }
