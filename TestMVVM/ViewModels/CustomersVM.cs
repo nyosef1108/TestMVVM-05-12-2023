@@ -23,5 +23,10 @@ namespace TestMVVM.ViewModels
                 
             } 
         }
+
+        public CustomersVM()
+        { 
+            CurrentModel = new CustumersModel();    
+        }
     }
 }

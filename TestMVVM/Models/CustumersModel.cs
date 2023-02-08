@@ -21,6 +21,7 @@ namespace TestMVVM.Models
             Costumers.Add(new Customer { Id = 522, Name = "yoram", Address = "Tlv" });
             Costumers.Add(new Customer { Id = 722, Name = "rina", Address = "js" });
             Costumers.Add(new Customer { Id = 822, Name = "dina", Address = "js" });
+            StoreName = "Rami Levi"; 
         }
 
          public void AddCustomer(string Name, string Address)
